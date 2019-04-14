@@ -25,7 +25,7 @@
     {
       "name": "인생 시계",
       "date": "2019/03/15",
-      "info": "인생을 24시간이라고 한다면, 지금 당신의 인생 시계는 몇 시입니까? 『아프니까 청춘이다』에 소개된 인생시계를 구현해 보았습니다.",
+      "info": "인생을 24시간이라고 한다면, 지금 당신의 인생 시계는 몇 시일까요? 『아프니까 청춘이다』에 소개된 인생시계를 구현해 보았습니다.",
       "image": "lifeclock",
       "url": "https://github.com/junhoyeo/Life-Clock"
     },
@@ -35,6 +35,13 @@
       "info": "SNS에서 유행하던 『컴공과 빙고』를 웹앱으로 구현했습니다. 직접 빙고판을 체크하고 링크를 통해 이름과 함께 공유할 수 있답니다.",
       "image": "comgong",
       "url": "https://github.com/junhoyeo/Comgong-Bingo"
+    },
+    {
+      "name": "디미워드",
+      "date": "2019/02",
+      "info": "디미고 입학 전, 친구들이 (입학 과제였던)영단어를 더 잘 외울 수 있도록 만든 단어장 서비스입니다.",
+      "image": "dimiwords",
+      "url": "https://github.com/civarINU/Dimiwords"
     }
   ]
 }

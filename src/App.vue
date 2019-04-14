@@ -15,6 +15,7 @@ export default {
   <div id="app">
     <juno-profile />
     <juno-year :year="2019" />
+    <juno-year :year="2018" />
   </div>
 </template>
 
