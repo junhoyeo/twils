@@ -12,6 +12,14 @@ export default {
     year: {
       type: Number,
       required: true
+    },
+  },
+
+  data () {
+    const yearData = require(`../assets/${this.year}.json`)
+    return {
+      info: yearData.info,
+      projects: yearData.projects
     }
   }
 }
@@ -19,30 +27,48 @@ export default {
 
 
 <template>
-  <div :class="`year-${year}`">
-    <h1>{{ year }}</h1>
-    <div 
-      :id="`${year}-4`"
-      class="month"
-    >
-      <h1>4월</h1>
+  <div :id="`year-${year}`">
+    <h2>{{ year }} <span class="info">{{ info }}</span></h2>
       <div class="projects">
-        <juno-project />
-        <juno-project />
-        <juno-project />
+        <div 
+          class="project-wrap"
+          v-for="(project, idx) in projects"
+          :key="`project-${year}-${idx}`"
+        >
+          <juno-project 
+            :year="year"
+            :project="project"
+          />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.projects {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+h2 {
+  color: #E8707B;
+  font-weight: 700;
+  font-size: 2em;
+  user-select: none;
 }
 
-.project {
-  justify-content: flex-start;
+.info {
+  font-size: 0.5em;
+  font-weight: 400;
+  color: #2A2B4A;
+  user-select: text;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.project-wrap {
+  display: block;
+  margin: 0.5em;
 }
 </style>
