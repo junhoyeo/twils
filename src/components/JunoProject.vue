@@ -66,6 +66,7 @@ export default {
     color: #2A2B4A;
     font-size: 0.9em;
     line-height: 1.2;
+    text-align: justify;
   }
 
   .image {
