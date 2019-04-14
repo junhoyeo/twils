@@ -70,7 +70,7 @@ export default {
 
   .image {
     position: relative;
-    background-color: #FFE2DF;
+    background-color: rgb(255, 239, 237);
     box-shadow: 5px 5px 32px -18px #730202;
     margin-bottom: 0.3em;
     cursor: pointer;
@@ -81,7 +81,7 @@ export default {
     height: 20vh;
     width: auto;
     margin: auto;
-    box-shadow: 3px 3px 32px -18px #2A2B4A;
+    box-shadow: 3px 3px 32px -18px #550f0f;
     object-position: center;
     object-fit: cover;
     
