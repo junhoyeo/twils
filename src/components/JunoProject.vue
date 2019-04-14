@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     onClickLink() {
-      location.href = this.project.url;
+      window.open(this.project.url, '_blank').focus()
     }
   }
 }

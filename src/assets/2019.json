@@ -9,6 +9,13 @@
       "url": "https://github.com/junhoyeo/blossom-theme"
     },
     {
+      "name": "매일매일커밋",
+      "date": "2019/04/13",
+      "info": "안드로이드 공부를 위해서 시작한 Weekly Android 프로젝트의 첫 번째 앱입니다. 오늘 깃허브에 커밋을 했는지, 기여를 몇 개 했는지를 표시하고 매 시간 푸시 알람을 보냅니다.",
+      "image": "edcommit",
+      "url": "https://github.com/junhoyeo/Everyday-Commits"
+    },
+    {
       "name": "디미시간",
       "date": "2019/03",
       "info": "각 학급별 시간표를 시간에 맞게 확인할 수 있게 하는 크롬 확장 프로그램입니다. 급식 정보가 함께 표시되며, 특정 과목을 선택해서 일주일 시간표를 볼 수도 있습니다.",
