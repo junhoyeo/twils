@@ -3,7 +3,7 @@ import JunoProject from './JunoProject'
 
 export default {
   name: 'JunoYear',
-  
+
   components: {
     JunoProject
   },
@@ -12,7 +12,7 @@ export default {
     year: {
       type: Number,
       required: true
-    },
+    }
   },
 
   data () {
@@ -25,21 +25,19 @@ export default {
 }
 </script>
 
-
 <template>
   <div :id="`year-${year}`">
     <h2>{{ year }} <span class="info">{{ info }}</span></h2>
-      <div class="projects">
-        <div 
-          class="project-wrap"
-          v-for="(project, idx) in projects"
-          :key="`project-${year}-${idx}`"
-        >
-          <juno-project 
-            :year="year"
-            :project="project"
-          />
-        </div>
+    <div class="projects">
+      <div
+        class="project-wrap"
+        v-for="(project, idx) in projects"
+        :key="`project-${year}-${idx}`"
+      >
+        <juno-project
+          :year="year"
+          :project="project"
+        />
       </div>
     </div>
   </div>

@@ -12,7 +12,7 @@ export default {
     }
   },
   methods: {
-    onClickLink() {
+    onClickLink () {
       window.open(this.project.url, '_blank').focus()
     }
   }
@@ -28,7 +28,7 @@ export default {
       <img :src="require(`../images/${year}/${project.image}.png`)">
     </div>
     <div class="content">
-      <span class="name">{{ project.name }} 
+      <span class="name">{{ project.name }}
         <span class="date">{{ project.date }}</span>
       </span>
       <p class="info">{{ project.info }}</p>
@@ -84,7 +84,7 @@ export default {
     box-shadow: 3px 3px 32px -18px #550f0f;
     object-position: center;
     object-fit: cover;
-    
+
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;

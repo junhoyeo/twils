@@ -2,16 +2,16 @@
 export default {
   name: 'JunoProfile',
 
-  data() {
+  data () {
     return {
       loading: true
     }
   },
 
-  created() {
+  created () {
     setInterval(() => {
       this.loading = !(this.loading)
-    }, 800);
+    }, 800)
   }
 }
 </script>
