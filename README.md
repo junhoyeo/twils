@@ -1,3 +1,3 @@
 # junhoyeo.github.io
 
-> JunhoYeo blog & portfolio
+> JunhoYeo blog(TWIL-style) & portfolio
