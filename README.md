@@ -1,3 +1,3 @@
 # junhoyeo.github.io
 
-> JunhoYeo portfolio
+> JunhoYeo blog & portfolio

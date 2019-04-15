@@ -22,7 +22,7 @@ export default {
   methods: {
     getSideStyle: function () {
       return {
-        'width': (this.show) ? '20em' : '0'
+        'width': (this.show) ? '18em' : '0'
       }
     },
     getOverlayStyle: function () {
@@ -45,11 +45,21 @@ export default {
       <template>
         <slot/>
       </template>
+      <span class="footer-wrap">
+        <div class="footer">
+          <a href="https://github.com/junhoyeo/junhoyeo.github.io" target="_blank">
+            <i class="fab fa-github-square fa-3x"></i>
+          </a>
+          <div class="copyright">
+            © 2019 <a href="https://github.com/JunhoYeo" target="_blank">JunhoYeo</a>
+          </div>
+        </div>
+      </span>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .overlay {
   height: 100%;
   width: 100%;
@@ -64,13 +74,56 @@ export default {
 
 .sidemenu {
   height: 100%;
-  width: 20em;
   position: fixed;
   z-index: 2;
   top: 0;
   right: 0;
-  background-color: #E8A0AB;
+  background-color: #2A2B4A;
   overflow-x: hidden;
   transition: 0.5s;
+  box-shadow: inset 3px 3px 32px -10px rgb(28, 28, 49);
+}
+
+.footer-wrap {
+  position: absolute;
+  bottom: 0.5em;
+  text-align: center;
+  width: 100%;
+}
+
+.footer {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  color: rgb(238, 171, 178);
+  padding-left: 0.5em;
+
+  .copyright {
+    font-size: 0.95em;
+  }
+
+  .copyright a {
+    color: rgb(238, 171, 178);
+    font-weight: bold;
+  }
+
+  .copyright a:hover, a:focus {
+    color: rgb(240, 156, 165);
+  }
+
+  .fab {
+    float: right;
+    margin-right: 0.1em;
+    color: rgb(238, 171, 178);
+  }
+
+  .fab:hover {
+    color: rgb(240, 156, 165);
+  }
+
+  .fav:focus {
+    color: rgb(240, 156, 165);
+    border: 1px solid #C4D7ED;
+  }
 }
 </style>

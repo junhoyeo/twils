@@ -10,6 +10,10 @@
   background: #FFE8B7;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 body {
   background: linear-gradient(45deg, #FFF2F2, #FFE2DF, #FFD6DC);
   background-repeat: no-repeat;

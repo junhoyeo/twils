@@ -41,7 +41,7 @@ export default {
   font-weight: 400;
   font-size: 1.2em;
   padding: 0.5em;
-  color: #FFE8B7;
+  color: rgb(253, 226, 168);
   background-color: rgb(238, 171, 178);
   cursor: pointer;
 }
