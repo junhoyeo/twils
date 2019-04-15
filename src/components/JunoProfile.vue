@@ -82,6 +82,7 @@ export default {
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    cursor: pointer;
   }
 
   .intro {
@@ -100,6 +101,10 @@ export default {
     // -webkit-text-stroke-color: #BF5967;
   }
 
+  h1 span {
+    cursor: pointer;
+  }
+
   @media (max-width: 700px) {
     h1 span {
       display: block;
@@ -110,6 +115,7 @@ export default {
     position: absolute;
     top: 0.5em;
     right: 0.5em;
+    cursor: pointer;
   }
 }
 </style>
