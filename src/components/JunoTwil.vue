@@ -25,9 +25,10 @@
     <template
       v-if="text"
     >
-      <li v-if="type === 'string'">
-        {{ text }}
-      </li>
+      <li 
+        v-if="type === 'string'"
+        v-html="marked(text)"
+      />
       <pre v-else-if="type === 'code'"><code>{{ text }}</code></pre>
     </template>
     <ul v-if="twils">
@@ -56,6 +57,7 @@
 
   li {
     color: #2A2B4A;
+    line-height: 1em;
   }
 }
 </style>
