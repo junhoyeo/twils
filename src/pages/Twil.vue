@@ -57,6 +57,7 @@ export default {
     font-weight: 400;
     color: #2A2B4A;
     user-select: text;
+    margin-bottom: 0.5rem;
   }
 }
 </style>

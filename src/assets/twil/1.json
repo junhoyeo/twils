@@ -5,6 +5,7 @@
   "end_date": "2019-04-21",
   "twils": [
     {
+      "day": "월요일",
       "type": "string",
       "text": "테스트 1",
       "twils": [
