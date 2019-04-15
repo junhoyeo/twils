@@ -21,7 +21,7 @@ export default {
     try {
       this.twil = require(`../assets/twil/${this.twil.id}.json`)
     } catch {
-      // todo
+      this.$router.push('/')
     }
   }
 }
