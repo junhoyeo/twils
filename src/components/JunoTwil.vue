@@ -37,10 +37,6 @@
         </span>
         <span class="twil-text" v-html="marked(text)"/>
       </li>
-      <!-- <li 
-        v-if="type === 'string'"
-        v-html="marked(text)"
-      /> -->
       <pre v-else-if="type === 'code'"><code>{{ text }}</code></pre>
     </template>
     <ul v-if="twils">
