@@ -79,4 +79,8 @@ export default {
     font-size: 1.2em;
   }
 }
+
+.twil:hover, .twil:focus {
+  background-color: rgb(255, 210, 215);
+}
 </style>
