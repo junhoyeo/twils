@@ -47,6 +47,9 @@ export default {
           </div>
         </div>
       </router-link>
+      <div class="no-twil">
+        아직 등록된 TWIL이 없습니다!
+      </div>
     </div>
   </div>
 </template>
@@ -82,5 +85,14 @@ export default {
 
 .twil:hover, .twil:focus {
   background-color: rgb(255, 210, 215);
+}
+
+.no-twil {
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #E8707B;
+  width: 100%;
+  text-align: center;
 }
 </style>
