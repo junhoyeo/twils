@@ -31,7 +31,7 @@ export default {
       <span class="name">{{ project.name }}
         <span class="date">{{ project.date }}</span>
       </span>
-      <p class="info">{{ project.info }}</p>
+      <p class="summary">{{ project.summary }}</p>
     </div>
   </div>
 </template>
@@ -61,7 +61,7 @@ export default {
     color: rgb(170, 139, 158);
   }
 
-  .info {
+  .summary {
     font-weight: 400;
     color: #2A2B4A;
     font-size: 0.9em;

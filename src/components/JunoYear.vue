@@ -16,9 +16,9 @@ export default {
   },
 
   data () {
-    const yearData = require(`../assets/${this.year}.json`)
+    const yearData = require(`../assets/projects/${this.year}.json`)
     return {
-      info: yearData.info,
+      summary: yearData.summary,
       projects: yearData.projects
     }
   }
@@ -27,7 +27,7 @@ export default {
 
 <template>
   <div :id="`year-${year}`">
-    <h2>{{ year }} <span class="info">{{ info }}</span></h2>
+    <h2>{{ year }} <span class="summary">{{ summary }}</span></h2>
     <div class="projects">
       <div
         class="project-wrap"
@@ -51,7 +51,7 @@ h2 {
   user-select: none;
 }
 
-.info {
+.summary {
   font-size: 0.5em;
   font-weight: 400;
   color: #2A2B4A;
