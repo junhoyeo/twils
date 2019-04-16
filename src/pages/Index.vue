@@ -47,7 +47,10 @@ export default {
           </div>
         </div>
       </router-link>
-      <div class="no-twil">
+      <div
+        v-if="!twils.length"
+        class="no-twil"
+      >
         아직 등록된 TWIL이 없습니다!
       </div>
     </div>
