@@ -43,6 +43,7 @@
       <li>
         <juno-twil
           v-for="(twil, idx) in twils" 
+          :id="`twil-${nesting}-${idx}`"
           :key="`twil-${nesting}-${idx}`"
           :day="twil.day"
           :text="twil.text"
@@ -57,10 +58,9 @@
 
 <style lang="scss" scoped>
 .twil {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 
   pre {
-    width: 80%;
     color: #282a36;
     font-size: 1rem;
   }
@@ -71,19 +71,33 @@
   }
 }
 
+@media (max-width: 800px) {
+  body ul {
+    padding-left: 1.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  body ul {
+    padding-left: 0.8em;
+  }
+}
+
 .twil-day {
   color: #BF5967;
   background-color: white;
-  padding: 2px;
-  padding-left: 7px;
-  font-size: 1.2rem;
+  padding: 4px;
+  font-size: 1rem;
   font-weight: 400;
   border: 1.5px solid #BF5967;
   border-radius: 12px;
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .twil-text {
+  margin-top: 0.5rem;
+  line-height: 1.2;
   display: inline-block;
 }
 </style>
