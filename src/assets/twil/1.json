@@ -116,8 +116,19 @@
       ]
     },
     {
+      "day": "수요일",
       "type": "string",
-      "text": "Special thanks to [@suhdonghwi](https://github.com/suhdonghwi)"
+      "text": "7교시 때 수행평가였던 음악 프로젝트를 발표했다. 인공신경망의 원리와 함께 Google Magenta를 소개하면서 음악을 생성하는 인공지능에 대해서 발표했는데 반응이 괜찮아서 좋았다. 지난 달에 우리 반이 베네듀 1등을 해서 담임선생님께서 아이스크림을 학급 전체에 사주셨는데 아무래도 이번 달은 안 될 것 같다.",
+      "twils": [
+        {
+          "type": "string",
+          "text": "동휘가 블로그에서 바로 글을 쓰고 커밋할 수 있는 [staticman](https://staticman.net/)을 알아보라고 했다. 살펴보니까 진짜 마음에 들었다. 시험이 끝날 즈음 ~~아무래도 그 전에 하겠지?~~ 연동해야겠다."
+        },
+        {
+          "type": "string",
+          "text": "앱잼 때 사용할 것으로 보이는 `HM-10`을 설정했다. `CH340`이라는 아두이노 나노 호환보드를 사용했다. [CH34x 드라이버](https://github.com/MPParsley/ch340g-ch34g-ch34x-mac-os-x-driver/blob/master/CH34x_Install_V1.3.pkg)를 설치하고 프로세서를 `atmega328old`로 설정하니 잡혔다. [HM-10 Bluetooth 4 BLE Modules](http://www.martyncurrey.com/hm-10-bluetooth-4ble-modules/)를 참고해서 모듈과 아두이노를 연결하고 `AltSoftSerial`을 이용해서 통신했다."
+        }
+      ]
     }
   ]
 }
