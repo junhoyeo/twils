@@ -44,11 +44,17 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.title, .date, .summary, .twil-list {
+  width: 90%;
+  margin: auto;
+}
+
 .twil-wrap {
   .title {
     font-size: 2.5em;
     font-weight: 700;
     user-select: none;
+    line-height: 1.2;
   }
 
   .date {
@@ -68,13 +74,7 @@ export default {
 }
 
 .twil-list {
-  width: 80%;
-}
-
-@media (max-width: 1000px) {
-  .twil-list {
-    width: 90%;
-  }
+  width: 90%;
 }
 
 @media (max-width: 800px) {

@@ -45,7 +45,10 @@ export default {
           class="image" src="../images/profile.jpeg"
           @click="onClickProfile"
         />
-        <span @click="onClickProfile">
+        <span
+          class="title"
+          @click="onClickProfile"
+        >
           {{ title }}: JunhoYeo
         </span>
         <i class="fas fa-bars" v-on:click="onClickMenu"></i>
@@ -116,6 +119,12 @@ export default {
     top: 0.5em;
     right: 0.5em;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 350px) {
+  .title {
+    font-size: 2.5rem;
   }
 }
 </style>
