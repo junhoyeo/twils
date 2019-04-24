@@ -8,6 +8,9 @@
       text: {
         type: String
       },
+      lang: {
+        type: String
+      },
       image: {
         type: String
       },
@@ -40,7 +43,9 @@
         </span>
         <span class="twil-text" v-html="marked(text)"/>
       </li>
-      <pre v-else-if="type === 'code'"><code>{{ text }}</code></pre>
+      <div v-else-if="type === 'code'" v-highlight>
+        <pre :class="`language-${lang}`"><code>{{ text }}</code></pre>
+      </div>
       <div
         v-else-if="type === 'image'"
         class="twil-image"
@@ -57,6 +62,7 @@
           :key="`twil-${nesting}-${idx}`"
           :day="twil.day"
           :text="twil.text"
+          :lang="twil.lang"
           :image="twil.image"
           :type="twil.type"
           :twils="twil.twils"

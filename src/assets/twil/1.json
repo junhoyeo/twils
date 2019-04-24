@@ -40,6 +40,7 @@
             },
             {
               "type": "code",
+              "lang": "javascript",
               "text": "\"theme\": {\n  \"colors\": {\n    \"frame\": [244, 188, 188],\n    \"frame_inactive\": [242, 172, 172],\n(...)"
             },
             {
@@ -88,7 +89,8 @@
         },
         {
           "type": "code",
-          "text": "// TreeList.vue\n<template>\n  <li>{{ current }}</li>\n  <ul v-if=\"list\">\n    <tree-list\n      v-for=\"(item, idx) in list\"\n      :key=\"`twil-${nesting}-${idx}`\"\n      :current=\"item.current\"\n      :list=\"item.list\"/>\n      :nesting=\"nesting + 1\"\n    />\n  </ul>\n</template>"
+          "lang": "html",
+          "text": "// TreeList.vue\n<template>\n  <li>{{ current }}</li>\n  <ul v-if=\"list\">\n    <tree-list\n      v-for=\"(item, idx) in list\"\n      :key=\"`twil-${nesting}-${idx}`\"\n      :current=\"item.current\"\n      :list=\"item.list\"\n      :nesting=\"nesting + 1\"/>\n    />\n  </ul>\n</template>"
         },
         {
           "type": "text",
@@ -163,7 +165,7 @@
         },
         {
           "type": "string",
-          "text": "시간상의 이유로인지 기술상의 이유인지, 앱은 결국 내가 애플리케이션 전체를 한경이가 한 디자인에 맞게 Vue.js로 구현하고 태건이가 간단한 웹뷰를 띄우는 앱을 만들어서 연결하는 식으로 만들어졌다. 다행히 이렇게 해도 디바이스와의 통신에는 문제가 없다(관람객용 앱이 아닌 관리자용 앱은 ESP8266으로 HTTP로 주고받을 예정이였기 때문). 오히려 이렇게 하니 UI를 세밀하게 제어할 수 있었던 것 같다."
+          "text": "시간상의 이유인지 기술상의 이유인지, 앱은 결국 내가 애플리케이션 전체를 한경이가 한 디자인에 맞게 Vue.js로 구현하고 태건이가 간단한 웹뷰를 띄우는 앱을 만들어서 연결하는 식으로 만들어졌다. 다행히 이렇게 해도 디바이스와의 통신에는 문제가 없다(관람객용 앱이 아닌 관리자용 앱은 ESP8266으로 HTTP로 주고받을 예정이였기 때문). 오히려 이렇게 하니 UI를 세밀하게 제어할 수 있었던 것 같다."
         },
         {
           "type": "string",
@@ -175,12 +177,27 @@
         },
         {
           "type": "image",
-          "text": "완성된 앱의 스크린샷이다.",
-          "image": "mockup"
+          "image": "mockup",
+          "text": "완성된 앱의 스크린샷이다."
         },
         {
           "type": "string",
-          "text": "아쉽게 수상은 하지 못했지만 좋은 친구들과 함께 여러가지 것들을 배우고 느낀 가치 있는 시간이였다."
+          "text": "아쉽게 수상은 하지 못했지만 좋은 친구들과 함께 여러가지 것들을 배우고 느낀 가치 있는 시간이였다.",
+          "twils": [
+            {
+              "type": "string",
+              "text": "PPT를 만들고 나서 발표를 내가 맡게 되었다. 발표자료를 디자인할 때만 해도 무슨 내용을 언제, 어떻게 말하면 좋을지 머릿속에 잘 그려졌는데, 실제 발표가 시작되자 생각했던 만큼 잘 하지 못해서 정말 아쉬웠다. 앞으로도 비슷한 기회가 있다면 잘 할 수 있을 거라는 느낌을 맹신하지 말고 발표 시작 전까지 계속 연습해야겠다."
+            },
+            {
+              "type": "code",
+              "lang": "javascript",
+              "text": "<div class=\"image\">\n  <img class=\"cube\" :src=\"require(`../assets/cube${Math.floor(this.light / 20)}.png`)\">\n</div>"
+            },
+            {
+              "type": "string",
+              "text": "각 큐브의 밝기에 따라 `cube0.png` ~ `cube5.png`의 이미지 파일이 있고, `this.light`는 `vue-slider-component`에 의해 그 값이 바뀌므로 0부터 100까지의 값을 지닐 수 있다. 그래서 그냥 20으로 나눠준 index를 이용해서 밝기에 해당하는 이미지를 렌더링해주는 것이다. ~~이렇게 하니까 굳이 `floor`할게 있을까 싶을 텐데 이미지 개수가 5로 안 떨어질 때도 이렇게 특정 오프셋으로 나눠주기 위해서 쓴 방법이다.~~ 원래는 png로 큐브 프레임만 띄우고 퍼지는 빛으로 `box-shadow`를 주려고 했는데, 테두리 때문에 이상하게 나왔다. 알아보니 `filter: drop-shadow()`를 사용해야 한다던데, 이걸로도 빛의 양을 제대로 표현하지 못해서 그냥 이미지를 뽑아서 썼다(svg로도 같은 시도를 해봤는데, xd로 작업한 에셋이라 조절이 쉽지 않았다)."
+            }
+          ]
         }
       ]
     }
