@@ -8,6 +8,9 @@
       text: {
         type: String
       },
+      image: {
+        type: String
+      },
       type: {
         type: String
       },
@@ -38,6 +41,13 @@
         <span class="twil-text" v-html="marked(text)"/>
       </li>
       <pre v-else-if="type === 'code'"><code>{{ text }}</code></pre>
+      <div
+        v-else-if="type === 'image'"
+        class="twil-image"
+      >
+        <img :src="require(`../images/twil/${image}.png`)">
+        <blockquote>{{ text }}</blockquote>
+      </div>
     </template>
     <ul v-if="twils">
       <li>
@@ -47,6 +57,7 @@
           :key="`twil-${nesting}-${idx}`"
           :day="twil.day"
           :text="twil.text"
+          :image="twil.image"
           :type="twil.type"
           :twils="twil.twils"
           :nesting="nesting + 1"
@@ -99,5 +110,26 @@
   margin-top: 0.5rem;
   line-height: 1.2;
   display: inline-block;
+}
+
+.twil-image {
+  text-align: center;
+
+  img {
+    width: 80%;
+    margin: auto;
+  }
+
+  @media (max-width: 900px) {
+    img {
+      width: 100%;
+    }
+  }
+
+  blockquote {
+    width: fit-content;
+    margin: auto;
+    margin-top: 0.2em;
+  }
 }
 </style>
