@@ -2,12 +2,12 @@
 
 ::-moz-selection {
   color: black;
-  background: #FFE8B7;
+  background: rgb(255, 249, 162);
 }
 
 ::selection {
   color: black;
-  background: #FFE8B7;
+  background: rgb(255, 249, 162);
 }
 
 a {

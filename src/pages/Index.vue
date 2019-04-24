@@ -42,9 +42,7 @@ export default {
         <div class="twil">
           <span class="twil__title">This Week I Learned #{{ twil.id }}</span>
           <span class="twil__date">{{ twil.start_date }} ~ {{ twil.end_date }}</span>
-          <div class="twil__summary">
-            {{ twil.summary }}
-          </div>
+          <div class="twil__summary" v-html="marked(twil.summary)"/>
         </div>
       </router-link>
       <div

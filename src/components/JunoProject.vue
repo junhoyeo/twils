@@ -25,7 +25,7 @@ export default {
       class="image"
       @click="onClickLink"
     >
-      <img :src="require(`../images/${year}/${project.image}.png`)">
+      <img :src="require(`../images/projects/${year}/${project.image}.png`)">
     </div>
     <div class="content">
       <span class="name">{{ project.name }}
