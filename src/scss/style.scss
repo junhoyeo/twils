@@ -1,0 +1,36 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&subset=korean');
+
+// highlight when selection
+::-moz-selection {
+  color: black;
+  background: $highlight;
+}
+::selection {
+  color: black;
+  background: $highlight;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+// background gradient
+body {
+  background: $background;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: $regular;
+}
+
+// default h1, h2 bottom color
+body h1,
+body h2 {
+  border-bottom-color: $lighten;
+}
+
+// default blockquote color
+body blockquote {
+  color: $content;
+  border-left-color: $content;
+}

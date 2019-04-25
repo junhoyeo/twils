@@ -60,6 +60,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import '../scss/variables.scss';
+
 .overlay {
   height: 100%;
   width: 100%;
@@ -78,7 +80,7 @@ export default {
   z-index: 2;
   top: 0;
   right: 0;
-  background-color: #2A2B4A;
+  background-color: $content;
   overflow-x: hidden;
   transition: 0.5s;
   box-shadow: inset 3px 3px 32px -10px rgb(28, 28, 49);
@@ -95,7 +97,7 @@ export default {
   width: 50%;
   margin: auto;
   position: relative;
-  color: rgb(238, 171, 178);
+  color: $lighten;
   padding-left: 0.5em;
 
   .copyright {
@@ -103,27 +105,27 @@ export default {
   }
 
   .copyright a {
-    color: rgb(238, 171, 178);
+    color: $lighten;
     font-weight: bold;
   }
 
   .copyright a:hover, a:focus {
-    color: rgb(240, 156, 165);
+    color: $lighter;
   }
 
   .fab {
     float: right;
     margin-right: 0.1em;
-    color: rgb(238, 171, 178);
+    color: $lighten;
   }
 
   .fab:hover {
-    color: rgb(240, 156, 165);
+    color: $lighter;
   }
 
   .fav:focus {
-    color: rgb(240, 156, 165);
-    border: 1px solid #C4D7ED;
+    color: $lighter;
+    // border: 1px solid #C4D7ED;
   }
 }
 </style>

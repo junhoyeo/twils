@@ -37,6 +37,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import '../scss/variables.scss';
+
 .project {
   font-family: 'Noto Sans KR', sans-serif;
   width: 300px;
@@ -63,7 +65,7 @@ export default {
 
   .summary {
     font-weight: 400;
-    color: #2A2B4A;
+    color: $content;
     font-size: 0.9em;
     line-height: 1.2;
     text-align: justify;

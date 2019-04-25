@@ -36,18 +36,20 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import '../scss/variables.scss';
+
 .menu-element {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
   font-size: 1.2em;
   padding: 0.5em;
-  color: rgb(253, 226, 168);
-  background-color: rgb(238, 171, 178);
+  color: $highlight;
+  background-color: $lighten;
   cursor: pointer;
 }
 
 .menu-element:not(:last-of-type) {
-  border-bottom: 2px solid rgb(229, 142, 151);
+  border-bottom: 2px solid $light;
 }
 
 .menu-element.current {
@@ -55,8 +57,8 @@ export default {
   font-weight: bold;
   font-size: 1.2em;
   padding: 0.5em;
-  color: #FFE8B7;
-  background-color: rgb(240, 156, 165);
+  color: $highlight;
+  background-color: $lighter;
   cursor: not-allowed;
 }
 </style>

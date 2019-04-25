@@ -74,16 +74,13 @@
 </template>
 
 <style lang="scss" scoped>
+@import '../scss/variables.scss';
+
 .twil {
   font-size: 1.2rem;
 
-  pre {
-    color: #282a36;
-    font-size: 1rem;
-  }
-
   li {
-    color: #2A2B4A;
+    color: $content;
     line-height: 1em;
   }
 }
@@ -101,12 +98,12 @@
 }
 
 .twil-day {
-  color: #BF5967;
+  color: $dark;
   background-color: white;
   padding: 4px;
   font-size: 1rem;
   font-weight: 400;
-  border: 1.5px solid #BF5967;
+  border: 1.5px solid $dark;
   border-radius: 12px;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
