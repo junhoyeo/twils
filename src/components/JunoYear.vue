@@ -44,8 +44,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../scss/variables.scss';
-
 h2 {
   color: $regular;
   font-weight: 700;

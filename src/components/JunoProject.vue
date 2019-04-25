@@ -37,8 +37,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../scss/variables.scss';
-
 .project {
   font-family: 'Noto Sans KR', sans-serif;
   width: 300px;

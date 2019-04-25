@@ -1,0 +1,28 @@
+// color variables for blossom theme
+
+/* highlight color
+  - selection (with black color text)
+  - sidebar element title
+ */
+$highlight: rgb(255, 249, 162);
+
+/* background
+  - body background style
+ */
+$background: linear-gradient(45deg, #FFF2F2, #FFE2DF, #FFD6DC);
+
+/* content color
+  - blog content color
+  - blockquote color
+ */
+$content: #2A2B4A;
+
+/* theme colors
+  - used in various elements
+ */
+$dark: #BF5967;
+$regular: #E8707B;
+$light: rgb(229, 142, 151);
+$lighter: rgb(240, 156, 165);
+$lighten: rgb(238, 171, 178);
+$lightest: #F5C1C7;

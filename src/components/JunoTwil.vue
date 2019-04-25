@@ -74,8 +74,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../scss/variables.scss';
-
 .twil {
   font-size: 1.2rem;
 

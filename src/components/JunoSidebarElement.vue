@@ -36,8 +36,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../scss/variables.scss';
-
 .menu-element {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;

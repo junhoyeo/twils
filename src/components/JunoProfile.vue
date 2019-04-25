@@ -69,8 +69,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../scss/variables.scss';
-
 .profile {
   display: block;
   user-select: none;

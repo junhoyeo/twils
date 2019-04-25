@@ -60,8 +60,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../scss/variables.scss';
-
 .overlay {
   height: 100%;
   width: 100%;
