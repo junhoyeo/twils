@@ -1,0 +1,32 @@
+// color variables for white theme
+
+/* highlight color
+- selection (with black color text)
+- sidebar element title
+*/
+$highlight: rgb(255, 249, 162);
+
+/* background
+  - body background style
+*/
+$background: linear-gradient(45deg, #ECE9E6, #FFF);
+
+// project display styles
+$project-background: rgb(224, 224, 224);
+$project-shadow: rgb(59, 59, 59);
+
+/* content color
+  - blog content color
+  - blockquote color
+*/
+$content: #2A2B4A;
+
+/* theme colors
+  - used in various elements
+*/
+$dark: #0D0D0D;
+$regular: #595959;
+$light: #737373;
+$lighter: #7e7d7d;
+$lighten: #A6A6A6;
+$lightest: rgb(235, 235, 235);
