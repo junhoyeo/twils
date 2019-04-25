@@ -67,7 +67,7 @@ export default {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: $overlay;
   visibility: visible;
   transition: 0.1s;
 }
