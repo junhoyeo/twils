@@ -60,14 +60,14 @@ export default {
   .date {
     font-size: 1.5em;
     font-weight: 700;
-    color: rgba(255, 109, 109, 0.596);
+    color: $light;
     display: block;
   }
   
   .summary {
     font-size: 1.2em;
     font-weight: 400;
-    color: #2A2B4A;
+    color: $content;
     user-select: text;
     margin-bottom: 0.5rem;
   }
