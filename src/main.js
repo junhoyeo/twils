@@ -7,7 +7,7 @@ import routes from './router'
 
 import './css/prism-dracula.css'
 import './css/github-markdown-css.css'
-import './css/style.css'
+import './scss/style.scss'
 
 Vue.use(VueCodeHighlight)
 Vue.prototype.marked = marked

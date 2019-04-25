@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&subset=korean');
 
+// highlight when selection
 ::-moz-selection {
   color: black;
-  background: rgb(255, 249, 162);
+  background: $highlight;
 }
-
 ::selection {
   color: black;
-  background: rgb(255, 249, 162);
+  background: $highlight;
 }
 
 a {
   text-decoration: none !important;
 }
 
+// background gradient
 body {
-  background: linear-gradient(45deg, #FFF2F2, #FFE2DF, #FFD6DC);
+  background: $background;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #E8707B;
+  color: $regular;
 }
 
-body h1 {
-  border-bottom-color: #F5C1C7;
-}
-
+// default h1, h2 bottom color
+body h1,
 body h2 {
-  border-bottom-color: #F5C1C7;
+  border-bottom-color: $lighten;
 }
 
+// default blockquote color
 body blockquote {
-  color: #2A2B4A;
-  border-left-color: #2A2B4A;
+  color: $content;
+  border-left-color: $content;
 }

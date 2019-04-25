@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss" scoped>
 h2 {
-  color: #E8707B;
+  color: $regular;
   font-weight: 700;
   font-size: 2em;
   user-select: none;
@@ -54,7 +54,7 @@ h2 {
 .summary {
   font-size: 0.5em;
   font-weight: 400;
-  color: #2A2B4A;
+  color: $content;
   user-select: text;
 }
 
