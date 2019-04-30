@@ -78,7 +78,7 @@ export default {
     display: inline-block;
     vertical-align:text-bottom;
     width: 10vw;
-    border: 2px solid $dark;
+    border: 2px solid $lighten;
     border-radius: 50%;
     user-select: none;
     -moz-user-select: none;
