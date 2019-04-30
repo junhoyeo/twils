@@ -8,6 +8,12 @@
       text: {
         type: String
       },
+      lang: {
+        type: String
+      },
+      image: {
+        type: String
+      },
       type: {
         type: String
       },
@@ -37,7 +43,16 @@
         </span>
         <span class="twil-text" v-html="marked(text)"/>
       </li>
-      <pre v-else-if="type === 'code'"><code>{{ text }}</code></pre>
+      <div v-else-if="type === 'code'" v-highlight>
+        <pre :class="`language-${lang}`"><code>{{ text }}</code></pre>
+      </div>
+      <div
+        v-else-if="type === 'image'"
+        class="twil-image"
+      >
+        <img :src="require(`../images/twil/${image}.png`)">
+        <blockquote>{{ text }}</blockquote>
+      </div>
     </template>
     <ul v-if="twils">
       <li>
@@ -47,6 +62,8 @@
           :key="`twil-${nesting}-${idx}`"
           :day="twil.day"
           :text="twil.text"
+          :lang="twil.lang"
+          :image="twil.image"
           :type="twil.type"
           :twils="twil.twils"
           :nesting="nesting + 1"
@@ -60,13 +77,8 @@
 .twil {
   font-size: 1.2rem;
 
-  pre {
-    color: #282a36;
-    font-size: 1rem;
-  }
-
   li {
-    color: #2A2B4A;
+    color: $content;
     line-height: 1em;
   }
 }
@@ -84,12 +96,12 @@
 }
 
 .twil-day {
-  color: #BF5967;
+  color: $dark;
   background-color: white;
   padding: 4px;
   font-size: 1rem;
   font-weight: 400;
-  border: 1.5px solid #BF5967;
+  border: 1.5px solid $dark;
   border-radius: 12px;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
@@ -99,5 +111,26 @@
   margin-top: 0.5rem;
   line-height: 1.2;
   display: inline-block;
+}
+
+.twil-image {
+  text-align: center;
+
+  img {
+    width: 80%;
+    margin: auto;
+  }
+
+  @media (max-width: 900px) {
+    img {
+      width: 100%;
+    }
+  }
+
+  blockquote {
+    width: fit-content;
+    margin: auto;
+    margin-top: 0.2em;
+  }
 }
 </style>

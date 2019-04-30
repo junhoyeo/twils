@@ -45,7 +45,10 @@ export default {
           <div class="twil__summary" v-html="marked(twil.summary)"/>
         </div>
       </router-link>
-      <div class="no-twil">
+      <div
+        v-if="!twils.length"
+        class="no-twil"
+      >
         아직 등록된 TWIL이 없습니다!
       </div>
     </div>
@@ -59,19 +62,19 @@ export default {
 
 .twil {
   padding-bottom: 0.5em;
-  border-bottom: 2px solid rgba(255, 109, 109, 0.596);
+  border-bottom: 2px solid $light;
   cursor: pointer;
 
   &__title {
     font-size: 2.5em;
     font-weight: 700;
-    color: #E8707B;
+    color: $regular;
   }
 
   &__date {
     font-size: 1.5em;
     font-weight: 700;
-    color: rgba(255, 109, 109, 0.596);
+    color: $light;
     display: block;
   }
 
@@ -82,14 +85,14 @@ export default {
 }
 
 .twil:hover, .twil:focus {
-  background-color: rgb(255, 210, 215);
+  background-color: $lightest;
 }
 
 .no-twil {
   margin-top: 1.5em;
   font-size: 1.5em;
   font-weight: 500;
-  color: #E8707B;
+  color: $regular;
   width: 100%;
   text-align: center;
 }

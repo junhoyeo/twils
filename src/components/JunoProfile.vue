@@ -78,7 +78,7 @@ export default {
     display: inline-block;
     vertical-align:text-bottom;
     width: 10vw;
-    border: 2px solid #BF5967;
+    border: 2px solid $dark;
     border-radius: 50%;
     user-select: none;
     -moz-user-select: none;
@@ -97,11 +97,8 @@ export default {
   h1 {
     font-size: 3em;
     font-weight: 900;
-    color: #BF5967;
+    color: $dark;
     user-select: none;
-    // -webkit-text-fill-color: transparent;
-    // -webkit-text-stroke-width: 2.2px;
-    // -webkit-text-stroke-color: #BF5967;
   }
 
   h1 span {

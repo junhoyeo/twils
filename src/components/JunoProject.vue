@@ -58,12 +58,12 @@ export default {
     float: right;
     font-weight: 400;
     font-size: 0.5em;
-    color: rgb(170, 139, 158);
+    color: $light;
   }
 
   .summary {
     font-weight: 400;
-    color: #2A2B4A;
+    color: $content;
     font-size: 0.9em;
     line-height: 1.2;
     text-align: justify;
@@ -71,8 +71,8 @@ export default {
 
   .image {
     position: relative;
-    background-color: rgb(255, 239, 237);
-    box-shadow: 5px 5px 32px -18px #730202;
+    background-color: $project-background;
+    box-shadow: 5px 5px 32px -18px $project-shadow;
     margin-bottom: 0.3em;
     cursor: pointer;
   }
@@ -82,7 +82,7 @@ export default {
     height: 20vh;
     width: auto;
     margin: auto;
-    box-shadow: 3px 3px 32px -18px #550f0f;
+    box-shadow: 3px 3px 32px -18px $project-shadow;
     object-position: center;
     object-fit: cover;
 
