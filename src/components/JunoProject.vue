@@ -13,7 +13,8 @@ export default {
   },
   methods: {
     onClickLink () {
-      window.open(this.project.url, '_blank').focus()
+      if (this.project.url)
+        window.open(this.project.url, '_blank').focus()
     }
   }
 }
