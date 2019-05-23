@@ -9,18 +9,12 @@
       "url": "https://github.com/LAB-C/BISS-FirmwareServer"
     },
     {
-      "name": "python-cube",
-      "date": "2018/11/12",
-      "summary": "파이썬으로 구현한 루빅스 큐브입니다. 기호 체계에 맞게 큐브를 회전시키고 각 면을 출력할 수 있어요.",
-      "image": "cube",
-      "url": "https://github.com/junhoyeo/python-cube"
-    },
-    {
       "name": "은여울중학교 챗봇",
       "date": "2018/03",
       "summary": "중학교 급식과 시간표, 날씨 정보를 알려줄 수 있는 카카오 플러스친구 챗봇입니다. 게임(리그오브레전드 및 메이플스토리) 전적 조회도 가능해요.",
       "image": "silvermealbot",
-      "url": "https://github.com/junhoyeo/Eunyeoul-Chatbot-PHP"
+      "url": "https://github.com/junhoyeo/Eunyeoul-Chatbot-PHP",
+      "full": true
     }
   ]
 }
