@@ -24,6 +24,7 @@ export default {
   <div class="project">
     <div
       class="image"
+      :class="{ full: project.full }"
       @click="onClickLink"
     >
       <img :src="require(`../images/projects/${year}/${project.image}.png`)">
@@ -78,6 +79,10 @@ export default {
     cursor: pointer;
   }
 
+  .image.full {
+    height: 20vh;
+  }
+
   img {
     display: flex;
     height: 20vh;
@@ -92,6 +97,12 @@ export default {
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+  }
+
+  .full img {
+    position: absolute; top:0; left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .content {
