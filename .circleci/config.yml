@@ -1,0 +1,38 @@
+version: 2
+jobs:
+  build:
+    branches:
+      ignore:
+        - gh-pages
+    docker:
+      - image: circleci/node:11
+    working_directory: ~/repo
+    environment:
+      - SOURCE_BRANCH: source
+      - TARGET_BRANCH: master
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Run tests
+          command: |
+            npm run deploy            
+
+            sudo npm install -g gh-pages
+            git config user.email "ci-build@klukas.net"
+            git config user.name "ci-build"
+      - deploy:
+          name: Deploy
+          command: |
+            sudo gh-pages-clean
+            sudo gh-pages --dist dist/ --branch master --repo https://${GH_TOKEN}@github.com/junhoyeo/junhoyeo.github.io.git
