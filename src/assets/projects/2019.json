@@ -2,11 +2,35 @@
   "summary": "디미고에 입학한 2019년은 정말 즐겁고 바쁘게 보내고 싶어요.",
   "projects": [
     {
+      "name": "디미고인",
+      "date": "2019/03 ~ 현재",
+      "summary": "한국디지털미디어고등학교 시스템 전산화 프로젝트, DIMIGOIN에서 프론트엔드 관리자를 맡고 있습니다.",
+      "image": "dimigoin",
+      "url": "https://github.com/dimigoin/dimigoin-front",
+      "full": true
+    },
+    {
+      "name": "와치미",
+      "date": "2019/05/18",
+      "summary": "AI가 주제였던 교내 해커톤 때 개발한, 눈과 시선을 인식해 컴퓨터 사용 업무 시의 생산성을 높이는 서비스를 제공하는 앱입니다. 랜딩 페이지와 OpenCV, AI 모델링을 담당했습니다.",
+      "image": "watchme",
+      "url": "https://github.com/watchme-dimigo"
+    },
+    {
       "name": "디미공구",
       "date": "2019/05/01",
       "summary": "디미고 내 공동구매를 수월하게 진행하기 위해 제작 중인 서비스입니다.",
       "image": "dimi09",
-      "url": false
+      "url": false,
+      "full": true
+    },
+    {
+      "name": "CUBE",
+      "date": "2019/04/21",
+      "summary": "(제 18회 앱잼) 문화재 보존/전시 시에 주변 환경을 모니터링/관리하고, 비컨으로서 정보를 관람객에게 브로드캐스팅하는 진열대 시스템을 제작했습니다. 기획과 앱을 담당했습니다.",
+      "image": "cube",
+      "url": "https://github.com/watchme-dimigo",
+      "full": true
     },
     {
       "name": "크롬 벚꽃 테마",
