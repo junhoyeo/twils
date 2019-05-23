@@ -7,14 +7,16 @@
       "summary": "한국디지털미디어고등학교 시스템 전산화 프로젝트, DIMIGOIN에서 프론트엔드 관리자를 맡고 있습니다.",
       "image": "dimigoin",
       "url": "https://github.com/dimigoin/dimigoin-front",
-      "full": true
+      "full": true,
+      "tags": ["vue.js"]
     },
     {
       "name": "와치미",
       "date": "2019/05/18",
       "summary": "AI가 주제였던 교내 해커톤 때 개발한, 눈과 시선을 인식해 컴퓨터 사용 업무 시의 생산성을 높이는 서비스를 제공하는 앱입니다. 랜딩 페이지와 OpenCV, AI 모델링을 담당했습니다.",
       "image": "watchme",
-      "url": "https://github.com/watchme-dimigo"
+      "url": "https://github.com/watchme-dimigo",
+      "tags": ["ai", "vue.js"]
     },
     {
       "name": "디미공구",
@@ -27,10 +29,11 @@
     {
       "name": "CUBE",
       "date": "2019/04/21",
-      "summary": "(제 18회 앱잼) 문화재 보존/전시 시에 주변 환경을 모니터링/관리하고, 비컨으로서 정보를 관람객에게 브로드캐스팅하는 진열대 시스템을 제작했습니다. 기획과 앱을 담당했습니다.",
+      "summary": "(제 18회 앱잼) 문화재 보존/전시 시에 주변 환경을 모니터링/관리하고, 비컨으로서 정보를 관람객에게 브로드캐스팅하는 진열대 시스템을 제작했습니다. 기획과 웹 개발(앱에서 웹 뷰 형태로 연동)을 담당했습니다.",
       "image": "cube",
       "url": "https://github.com/watchme-dimigo",
-      "full": true
+      "full": true,
+      "tags": ["vue.js"]
     },
     {
       "name": "크롬 벚꽃 테마",
@@ -51,28 +54,32 @@
       "date": "2019/03",
       "summary": "각 학급별 시간표를 시간에 맞게 확인할 수 있게 하는 크롬 확장 프로그램입니다. 급식 정보가 함께 표시되며, 특정 과목을 선택해서 일주일 시간표를 볼 수도 있습니다.",
       "image": "dimicigan",
-      "url": "https://github.com/junhoyeo/dimicigan-chrome"
+      "url": "https://github.com/junhoyeo/dimicigan-chrome",
+      "tags": ["vue.js"]
     },
     {
       "name": "인생 시계",
       "date": "2019/03/15",
       "summary": "인생을 24시간이라고 한다면, 지금 당신의 인생 시계는 몇 시일까요? 『아프니까 청춘이다』에 소개된 인생시계를 구현해 보았습니다.",
       "image": "lifeclock",
-      "url": "https://github.com/junhoyeo/Life-Clock"
+      "url": "https://github.com/junhoyeo/Life-Clock",
+      "tags": ["vue.js"]
     },
     {
       "name": "컴공과 빙고",
       "date": "2019/03",
       "summary": "SNS에서 유행하던 『컴공과 빙고』를 웹앱으로 구현했습니다. 직접 빙고판을 체크하고 링크를 통해 이름과 함께 공유할 수 있답니다.",
       "image": "comgong",
-      "url": "https://github.com/junhoyeo/Comgong-Bingo"
+      "url": "https://github.com/junhoyeo/Comgong-Bingo",
+      "tags": ["vue.js"]
     },
     {
       "name": "디미워드",
       "date": "2019/02",
       "summary": "디미고 입학 전, 친구들이 (입학 과제였던)영단어를 더 잘 외울 수 있도록 만든 단어장 서비스입니다.",
       "image": "dimiwords",
-      "url": "https://github.com/civarINU/Dimiwords"
+      "url": "https://github.com/civarINU/Dimiwords",
+      "tags": ["vue.js"]
     }
   ]
 }

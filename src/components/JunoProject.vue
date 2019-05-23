@@ -1,6 +1,11 @@
 <script>
+import JunoBadge from '../components/JunoBadge'
+
 export default {
   name: 'JunoProject',
+  components: {
+    JunoBadge
+  },
   props: {
     year: {
       type: Number,
@@ -33,6 +38,16 @@ export default {
       <span class="name">{{ project.name }}
         <span class="date">{{ project.date }}</span>
       </span>
+      <div
+        class="tags"
+        v-if="project.tags"
+      >
+        <juno-badge
+          v-for="(tag, idx) in project.tags"
+          :key="idx"
+          :text="tag"
+        />
+      </div>
       <p class="summary">{{ project.summary }}</p>
     </div>
   </div>
