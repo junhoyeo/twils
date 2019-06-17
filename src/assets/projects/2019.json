@@ -31,7 +31,7 @@
       "date": "2019/04/21",
       "summary": "(제 18회 앱잼) 문화재 보존/전시 시에 주변 환경을 모니터링/관리하고, 비컨으로서 정보를 관람객에게 브로드캐스팅하는 진열대 시스템을 제작했습니다. 기획과 웹 개발(앱에서 웹 뷰 형태로 연동)을 담당했습니다.",
       "image": "cube",
-      "url": "https://github.com/watchme-dimigo",
+      "url": "https://github.com/inudevs/CUBE-Web",
       "full": true,
       "tags": ["vue.js"]
     },
