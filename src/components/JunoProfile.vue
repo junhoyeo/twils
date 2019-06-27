@@ -42,7 +42,7 @@ export default {
     <div class="intro">
       <h1>
         <img
-          class="image" src="../images/profile.jpeg"
+          class="image" src="https://avatars0.githubusercontent.com/u/32605822?s=400"
           @click="onClickProfile"
         />
         <span
