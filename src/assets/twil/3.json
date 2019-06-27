@@ -1,7 +1,62 @@
 {
   "id": 3,
-  "summary": "React Native 등등 여러가지",
+  "summary": "React Native + 요즘 느끼는 것들",
   "start_date": "2019-06-27",
   "end_date": null,
-  "twils": []
+  "twils": [
+    {
+      "day": "목요일",
+      "type": "string",
+      "text": "오랜만에 블로그에 글을 써본다. 활동은 여러 가지 하고 있는데 그만큼 실적은 안 나와서 약간 힘들었었다. 사실 TWIL 자체가 시험기간에 커밋 유지하려고 했던 건데 ~~아앗;; 그런데 그게 주가 된 케이스였던 것임~~ 시험 끝나면서 대놓고 개발하면 되서 안 올렸었다. 참고로 지금도 시험기간인데 둘 다 하고 있다."
+    },
+    {
+      "type": "image",
+      "image": "uhmtoto",
+      "text": "서훈이 귀여워"
+    },
+    {
+      "type": "string",
+      "text": "먼저 며칠 전부터 **React Native**로 프로젝트를 진행하고 있어서 괜찮은 모듈 몇 개를 소개해 보겠다. 사실 이 전에는 Flutter를 보고 있었는데 한 번도 건드려 본 적 없는 Dart보다 React가 나은 것 같았고, 아직은 안정적인 모듈이 더 많아서 걍 이걸로 선택했다.",
+      "twils": [
+        {
+          "type": "string",
+          "text": "`react-navigation`: 라우팅과 네비게이션을 처리해 주는 모듈이다. 약간 Vue에서의 `vue-router` 같은 존재인 듯하다. [github](https://github.com/react-navigation/react-navigation)"
+        },
+        {
+          "type": "string",
+          "text": "`react-native-easy-grid`: 그리드 레이아웃을 쉽게 만들 수 있도록 해준다. [github](https://github.com/GeekyAnts/react-native-easy-grid)"
+        },
+        {
+          "type": "string",
+          "text": "`react-native-fontawesome`: RN에서 fontawesome이 그리울 때 함께할 수 있다. [github](https://github.com/FortAwesome/react-native-fontawesome)"
+        },
+        {
+          "type": "string",
+          "text": "`react-native-tts`: Text-To-Speech를 구현하게 해준다. [github](https://github.com/ak1394/react-native-tts)"
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "text": "이건 아직 적용은 안 해본 모듈인데 곧 쓰게 될 것들이다. 이렇게 두고 보니 다 안드로이드 네이티브 API에 있는 블루투스, 위치, 문자 같은 기본적인 서비스에 대한 것 같다.",
+      "twils": [
+        {
+          "type": "string",
+          "text": "`react-native-bluetooth-serial`"
+        },
+        {
+          "type": "string",
+          "text": "`react-native-location`"
+        },
+        {
+          "type": "string",
+          "text": "`react-native-sms`"
+        },
+        {
+          "type": "string",
+          "text": "`react-native-stt`"
+        }
+      ]
+    }
+  ]
 }
