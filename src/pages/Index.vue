@@ -18,6 +18,7 @@ export default {
         continue
       }
     }
+    this.twils.sort((a, b) => (a.start_date < b.start_date) ? 1 : -1)
   },
 
   data() {
